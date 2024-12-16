@@ -2,14 +2,14 @@ import mermaid from "mermaid";
 import { useEffect, useRef } from "react";
 
 function ThirdDiagram() {
-const diagramRef = useRef(null);
+    const diagramRef = useRef(null);
 
-useEffect(() => {
-    mermaid.initialize({startOnLoad: true})
-    if (diagramRef.current){
-    mermaid.contentLoaded();
-    }
-}, [])
+    useEffect(() => {
+        mermaid.initialize({startOnLoad: true})
+        if (diagramRef.current){
+        mermaid.contentLoaded();
+        }
+    }, [])
 
     return (
         <div>
